@@ -1,12 +1,13 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: RebyrgBlog
+title: RebyrgBlog | Dev site of DevOps blog
+description: Dev site of DevOps blog by Rebyrg.
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-email: youremail@xyz.com
-disqus_username: disqus_username
+  - kubernetes
+  - java
+  - golang
+  - angular
+  - microservices
+email: rebyrg@gmail.com
+disqus_username: rebyrg
 show_hero: true
