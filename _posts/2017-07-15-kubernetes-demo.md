@@ -17,11 +17,10 @@ tags:
 author: rebyrg
 paginate: true
 ---
-# Intro
-My notes for demo of kubernetes features made in july 2017 for devs in my company.
-I made it for people who didn't know what container and kubernetes are.
+My notes made to demonstrate kubernetes features. The demo was in July 2017 for develelopers in company I work for.
+I did it for people who didn't know what container and kubernetes are.
 I tried to encourage them to start their adventure with kubernets.
-Source code is available here: [https://github.com/Rebyrg/k8s-demo](https://github.com/Rebyrg/k8s-demo)
+Source code: [https://github.com/Rebyrg/k8s-demo](https://github.com/Rebyrg/k8s-demo)
 
 # Application
 It is a very simple spring boot application created for demonstration of basic kubernetes features.
@@ -31,14 +30,14 @@ The application exposes only one simple service `/rate` on spring boot http port
 The rate service returns a rate for a pair of currencies, e.g. it returns 1.0 value for EUR/USD. 
 The rate service works in two modes, each created for a different purpose.
 
-## 1. Checking if application is serving proper output
+#### 1. Checking if application is serving proper output
 
 When service is executed with EUR/USD pair it returns a constant value defined in attribute `eurUsdRate` 
 of `CurrencyProviderRest` class.
 It is normal, fast operation with low latency. 
 It always returns the same value until you change the constant in sources and build a new version of the application.
 
-## 2. Emulating high CPU load operation
+#### 2. Emulating high CPU load operation
 
 Executing service with any other then EUR/USD values, e.g. PLN/EUR, causes special __rate wizzard__ feature will be used. The feature is implemented 
 in `rateWizzard` method of `CurrencyProviderRest` class. 
